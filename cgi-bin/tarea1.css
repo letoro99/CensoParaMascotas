@@ -1,0 +1,311 @@
+        body{
+            background-color: #F0F0F0;
+            padding: 20px;
+        }
+        .cabecera{
+            background-color: #ffffff;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 50px;
+        }
+        #formulario,.main-info{
+            margin-top: 5px;
+            background-color: #f1fcf4;
+            padding: 10px;
+            border-radius: 25px;
+
+        }
+        .leyenda{
+            font-family: "Century Gothic", serif;
+            font-size: 25px;
+            color: #2e7296;
+            padding: 2px;
+            margin: 2px;
+
+        }
+        .leyenda_principal{
+            font-family: "Century Gothic", serif;
+            font-size: 40px;
+            color: #1a4256;
+            padding: 2px;
+            margin: 1px;
+        }
+        .main {
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+        @media screen and (max-width: 1195px){
+            .menu_principal_fondo a{
+                display: grid !important;
+                border-bottom: 2px solid #056956;
+                border-top: 2px solid #056956;
+                border-right: none !important;
+                border-left: none !important;
+            }
+            .menu_principal_fondo{
+                padding-bottom: 110px !important;
+            }
+        }
+        @media screen and (max-width: 1440px){
+            .main{
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+            }
+        }
+        p {
+            text-align: center;
+            margin:25px;
+        }
+        .titulo{
+            text-align: center;
+        }
+        .titulo a{
+            font-family: "Century", bold, sans-serif;
+            font-size: 65px;
+            color: #2e7296;
+            text-decoration: none;
+        }
+        .menu_principal_fondo{
+            display:block;
+            margin-top: 30px ;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-left: 15%;
+            margin-right: 15%;
+            text-align: center;
+            border-radius: 15px;
+            height: 50px;
+            font-size: 25px;
+        }
+        .menu_principal_fondo a {
+            text-decoration: none;
+            font-variant: small-caps;
+            font-family: "Trebuchet MS",serif;
+            letter-spacing: 4px;
+            font-size: 20px;
+            background-color: #ffffff;
+            color: #056956;
+            border-left: 2px solid #056956;
+            border-right: 2px solid #056956;
+            padding: 10px;
+            border-radius: 15px;
+            display: inline-block;
+            transition: color 2s, background-color 1s;
+        }
+        .menu_principal_fondo a:hover{
+            background-color: #e2f2f6;
+            color: #4b93e3;
+            cursor: pointer;
+            border: 2px solid #2e7296;
+            box-shadow: #f5f5f5 0 0 10px 10px;
+        }
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            margin: 35px 5px 5px 5px;
+        }
+        th, td {
+            color: #01133e;
+            border:2px solid #01174e;
+            font-family: "Courier New", serif;
+            padding: 10px;
+            background-color: #e0f1f0;
+            margin-top: 50px;
+        }
+        .titulo_form{
+            color: #0a2e3c;
+            border-radius: 15px;
+            background-color: #f1fcf4;
+            font-family: "Century Gothic", serif;
+            font-size: 50px;
+            text-align: center;
+            margin: 15px 15%;
+        }
+        input,select{
+            font-family: "Courier New", serif;
+            font-size: 17px;
+            border: 2px double #a2efe0;
+            border-radius: 10px;
+            padding: 5px;
+            margin-left: 25px;
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+        #enviar{
+            background-color: #a2efe0;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid #1a4256;
+            padding: 10px;
+            font-size: 30px;
+            color: #1a4256;
+            transition: background-color 2s, color 2s, box-shadow 2s;
+        }
+        .botones{
+            margin-top: 15px !important;
+            text-align: center;
+        }
+        .botones-home{
+            margin-top: 10px;
+            text-align: center;
+            margin-bottom: 25px;
+            padding: 10px;
+        }
+        .botones-home a{
+            text-decoration: none;
+            margin-top: 10px;
+            margin-bottom: 100px;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: #a2efe0;
+            color: #1a4256;
+            font-family: "Century Gothic", serif;
+            transition: background-color 2s, color 2s, box-shadow 2s;
+        }
+        .entrada{
+            margin: 2px;
+            padding: 5px;
+        }
+        #domicilio,#contacto,#mascota{
+            margin: 5px;
+            padding: 2px;
+        }
+        #agregarArchivo,#agregarMascota{
+            box-shadow: white 0 0 0 0;
+            text-align: center;
+            border: 2px solid #419fab;
+            border-radius: 15px;
+            padding: 5px 7px;
+            background-color: #bad8ea;
+            color: #1a4256;
+            transition: background-color 2s, color 2s, box-shadow 2s;
+        }
+        #agregarMascota{
+            font-size: 20px !important;
+        }
+        .botones-home a:hover,#agregarMascota:hover, #enviar:hover, #agregarMascota:hover, #agregarArchivo:hover, .opcion_estadistica:hover{
+            cursor: pointer;
+            color: #01174e;
+            box-shadow: #1a4256 0 0 2px 2px;
+            background-color: white;
+        }
+        .cuadroAlerta{
+            background-color: #c4efe7;
+            box-shadow: #1a4256 0 0 10px 10px;
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-top: 30px;
+            padding: 10px;
+            border: 2px solid black;
+            transition: all 2s;
+        }
+        .centrar, #mensajeAlerta{
+            text-align: center;
+        }
+        #confirmar{
+            border-radius: 10px;
+            padding: 5px;
+            background-color: #42ff42;
+            transition: background-color 2s, box-shadow 2s;
+        }
+        #denegar{
+            border-radius: 10px;
+            padding: 5px;
+            background-color: #f18181;
+            transition: background-color 2s, box-shadow 2s;
+        }
+        #confirmar:hover{
+            cursor:pointer;
+            box-shadow: #77e566 0 0 2px 2px;
+            background-color: #03be03;
+
+        }
+        #denegar:hover{
+            cursor:pointer;
+            box-shadow: #de0d0d 0 0 2px 2px;
+            background-color: #e72f2f;
+        }
+        .entrada-info{
+            background-color: white;
+            border-radius: 15px;
+            font-family: "Courier New", serif;
+            font-weight: bold;
+            font-size: 20px;
+            margin-left: 25px;
+            margin-top: 4px;
+            padding: 5px 5px 5px 20px;
+        }
+        .menu_estadistica{
+            background-color: #e2f2f6;
+            border-radius: 15px;
+            text-align: center;
+        }
+        .opcion_estadistica{
+            text-align: center;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            background-color: #e2f2f6;
+            font-family: "Century Gothic", serif;
+            font-size: 25px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            transition: background-color 1s, color 1s, box-shadow 1s;
+        }
+        #imagen{
+            background-color: #ffffff;
+            border-radius: 50px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .mas_imagenes{
+            width: 100%;
+            height: 150px;
+            overflow: auto;
+        }
+        
+        .info:hover{
+            cursor: pointer;
+        }
+        .img-raton, .img-raton img{
+            text-align: center;
+            width: 360px;
+            height: 240px;
+            transition: width 2s, height 2s;
+        }
+        .img-raton:hover, .img-raton img:hover{
+            width: 800px;
+            height: 600px;
+        }
+        .men-bienvenida{
+            margin: 25px;
+            padding-left: 15%;
+            padding-right: 15%;
+            font-family: "Century Gothic",serif;
+            color: #1a4256;
+        }
+        #contenedor_mapa{
+            background-color: white;
+            box-shadow: #0be9d6 0px 0px 2px 2px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            margin-right: 20px;
+            margin-left: 20px;
+            height: 600px;
+        }
+        .highcharts-grafico{
+            margin-left: 10%;
+            margin-right: 10%;
+            display: inline-block;
+            width:75%;
+            height: 50%;
+        }
+        .leaflet-popup-content{
+            margin-left: 1px;
+            width: 500px;
+            height: 200px;
+            overflow-y: auto;
+            overflow-x: none;
+        }
+        .tabla_mapa{
+            margin-left: 0px;
+        }

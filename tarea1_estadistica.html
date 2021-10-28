@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Estadistica</title>
+    <link rel="stylesheet" type="text/css" href="cgi-bin/tarea1.css">
+    <script src="cgi-bin/tarea1.js"></script>
+    <script src="cgi-bin/script_ajax_graficos.js"></script>
+    <script src="libraries/highcharts.js"></script>
+    <script src="libraries/accessibility.js"></script>
+    <script src="libraries/export-data.js"></script>
+    <script src="libraries/exporting.js"></script>
+</head>
+<body onload="init_graficos();">
+<div class="cabecera">
+    <div class="titulo"><a href="cgi-bin/index.py">Censo de mascotas</a></div>
+    <div class="menu_principal_fondo">
+        <a href="tarea1_formulario.html">Informar mascotas</a>
+        <a href="cgi-bin/listado_mascota.py?pag=0">Ver listado de mascotas</a>
+        <a href="tarea1_estadistica.html">Estadísticas</a>
+    </div>
+    </div>
+<div class="titulo_form">Estadística sobre nuestros formularios</div>
+<div class="opcion_estadistica" onclick="loadGraphics()">Recargar gráficos inmediatamente</div>
+<figure class="highcharts-grafico">
+    <div id="contenedor_grafico1"></div><br>
+    <div id="contenedor_grafico2"></div><br>
+    <div id="contenedor_grafico3"></div><br>
+</figure>
+<div class="botones-home">
+    <a href="cgi-bin/index.py">Página Principal</a>
+</div>
+</div>
+</body>
+</html>

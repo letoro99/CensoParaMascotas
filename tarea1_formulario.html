@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" type="text/css" href="cgi-bin/tarea1.css">
+    <script src="cgi-bin/tarea1.js"></script>
+</head>
+<body>
+<div class="cabecera">
+    <div class="titulo"><a href="cgi-bin/index.py">Censo de mascotas</a></div>
+    <div class="menu_principal_fondo">
+        <a href="tarea1_formulario.html">Informar mascotas</a>
+        <a href="cgi-bin/listado_mascota.py?pag=0">Ver listado de mascotas</a>
+        <a href="tarea1_estadistica.html">Estadísticas</a>
+    </div>
+    </div>
+<div class="titulo_form">Formulario para mascotas</div>
+<div class="main">
+    <form id="formulario" method="post" action="cgi-bin/save_data.py" enctype="multipart/form-data" onsubmit="validacionFormulario()">
+        <div id="domicilio">
+            <div class="leyenda_principal">Domicilio</div>
+
+            <div class="entrada">
+                <div class="leyenda">Región *</div>
+                <select id="region" name="region" required="required" onclick="mostrarComunas()">
+                    <option value="" selected="selected">Ingrese la región</option>
+                    <option value="15">Arica y Parinacota</option>
+                    <option value="1">Tarapacá</option>
+                    <option value="2">Antofagasta</option>
+                    <option value="3">Atacama</option>
+                    <option value="4">Coquimbo</option>
+                    <option value="5">Valparaiso</option>
+                    <option value="13">Metropolitana</option>
+                    <option value="6">Libertador Gral. Bernardo O'higgins</option>
+                    <option value="7">Maule</option>
+                    <option value="16">Ñuble</option>
+                    <option value="8">BioBío</option>
+                    <option value="9">Araucanía</option>
+                    <option value="14">Los Ríos</option>
+                    <option value="10">Los Lagos</option>
+                    <option value="11">Aisén del Gral. Carlos Ibáñez del Campo</option>
+                    <option value="12">Magallanes y de la Antártica Chilena</option>
+                </select>
+            </div>
+
+            <div class="entrada">
+                <div class="leyenda">Comuna *</div>
+                <select id="comuna" name="comuna" required="required">
+                    <option value="" selected="selected">Ingrese la comuna</option>
+                </select>
+            </div>
+
+            <div class="entrada">
+                <div class="leyenda">Calle *</div>
+                    <input type="text" id="calle" size="100" required="required" name="calle" maxlength="250">
+            </div>
+
+            <div class="entrada">
+                <div class="leyenda">Número *</div>
+                    <input type="number" id="numero" required="required" name="numero">
+            </div>
+
+            <div class="entrada">
+                <div class="leyenda">Sector</div>
+                    <input type="text" id="sector" name="sector" size="100" maxlength="100">
+            </div>
+        </div>
+        <div id="contacto">
+            <div class="leyenda_principal">Datos de contacto</div>
+            <div class="entrada">
+                <div class="leyenda">Nombre *</div>
+                    <input type="text" id="nombre" required="required" name="nombre" size="100" maxlength="200">
+            </div>
+
+            <div class="entrada">
+                <div class="leyenda">Correo electrónico *</div>
+                    <input type="email" id="correo" required="required" name="correo" size="100">
+            </div>
+
+            <div class="entrada">
+                <div class="leyenda">Número de celular</div>
+                    <input type="tel" id="celular" name="celular" size="15" placeholder="+569xxxxxxxx">
+            </div>
+        </div>
+        <div id="mascota">
+            <div class="leyenda_principal">Información de la mascota</div>
+            <div class="entrada">
+                <div class="leyenda">Tipo *</div>
+                <select id="tipo-mascota0" required="required" name="tipo-mascota0" onclick="newAnimal()">
+                    <option value="" selected="selected">Tipo de mascota</option>
+                    <option value="1">Perro</option>
+                    <option value="2">Gato</option>
+                    <option value="3">Pez</option>
+                    <option value="4">Tortuga</option>
+                    <option value="5">Hámster</option>
+                    <option value="6">Loro</option>
+                    <option value="7">Iguana</option>
+                    <option value="8">Araña</option>
+                    <option value="9">Otro</option>
+                </select>
+                <div id="texto90"></div>
+            </div>
+
+            <div class="entrada">
+                <div class="leyenda">Edad en años *</div>
+                    <input type="number" id="edad-mascota0" required="required" name="edad-mascota0">
+            </div>
+
+            <div class="entrada">
+                <div class="leyenda">Color *</div>
+                    <input type="text" id="color-mascota0" required="required" name="color-mascota0" size="30">
+            </div>
+
+            <div class="entrada">
+                <div class="leyenda">Raza *</div>
+                    <input type="text" id="raza-mascota0" required="required" name="raza-mascota0" size="30">
+            </div>
+
+            <div class="entrada">
+                <div class="leyenda">Esterilizado *</div>
+                    <select id="esterilizado-mascota0" required="required" name="esterilizado-mascota0">
+                        <option value="" selected="selected">Ingrese alguna preferencia</option>
+                        <option value="1">Si</option>
+                        <option value="2">No</option>
+                        <option value="3">No aplica</option>
+                    </select>
+            </div>
+
+            <div class="entrada">
+                <div class="leyenda">Vacunas al día *</div>
+                    <select id="vacunas-mascota0" required="required" name="vacunas-mascota0">
+                        <option value="" selected="selected">Ingrese alguna preferencia</option>
+                        <option value="1">Si</option>
+                        <option value="2">No</option>
+                        <option value="3">No aplica</option>
+                </select>
+            </div>
+
+            <div class="entrada">
+                <div class="leyenda">Foto * (en .jpg o .png y máximo 2 MB)</div>
+                    <input type="file" id="foto-mascota-00" required="required" name="foto-mascota-00">
+                    <div id="mas-foto-mascota0"></div>
+                    <div class="entrada botones">
+                    <button id="agregarArchivo" onclick="addFoto(0)">Agregar imagen</button>
+                    </div>
+            </div>
+        </div>
+
+        <div class="entrada">
+        <div id="masMascotas"></div>
+            <div class="entrada botones">
+            <button id="agregarMascota" type="button" onclick="addMascota()">Informar otra mascota en el domicilio</button>
+            </div>
+        </div>
+
+        <div id="mensajeAlerta">
+            <div class="entrada botones">
+                <button id="enviar" type="button" onclick="showMensaje()">Enviar información de este domicilio</button>
+            </div>
+
+    </form>
+</div>
+</body>
+</html>
